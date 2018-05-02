@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%@books.each do |libro| %>
+
+      <tr>
+        <td><%=libro.title%></td>
+        <td><%=libro.id%></td>
+      </tr>
+  <% end %>
+
+
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%@autores_de_libros.each do |autor| %>
+
+      <tr>
+        <td><%=autor.id%></td>
+        <td><%="#{autor.name} #{autor.lastname}"%></td>
+      </tr>
+  <% end %>
+
+
+    </tbody>
+  </table>
+</div>
